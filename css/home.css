@@ -1,0 +1,173 @@
+body{
+    background-image: url(../img/school-view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+/*For carousel box */
+.carousel-inner{
+
+   position: relative;
+   top: 90px;
+   box-shadow: pink 4px 3px 35px;
+   width:50%;
+}
+.carousel .carousel-indicators li {
+  position: relative;
+   top: 5em; 
+}
+/*end of carousel box*/
+
+/*login modal*/
+#modal-login{
+  top: 200px;
+}
+#chkbox{
+  float: left;
+}
+#chktxt{
+  color: black;
+  text-shadow: black 1px 3px 9px;
+}
+#chktxt:hover{
+cursor: pointer;
+}
+
+#showpswd:hover{
+  cursor:pointer ;
+}
+
+/*signup and login btn*/
+#btnsign-up:hover{
+  animation: btn-shake 0.5s;
+  animation-iteration-count: 1;
+}
+#btnlogin:hover{
+  animation: btn-shake 0.5s;
+  animation-iteration-count: 1;
+}
+/*for shake effect on buttons*/
+@keyframes btn-shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/*end of login modal*/
+
+/*for social media icons*/
+#media-brand{
+  float: left;
+}
+#login-ff-txt{
+  position: relative;
+  float: left;
+  left: 70%;
+}
+#fb{
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  color: rgb(23, 175, 245);
+  transition: transform 2s;
+  
+}
+#fb:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+
+}
+
+#google{
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  color: rgb(187, 31, 31);
+  margin-left: 10px;
+  transition: transform 2s;
+}
+#google:hover{
+  cursor:pointer;
+  transform: rotate(360deg);
+}
+
+/*end of social media icons*/
+
+@media screen and (max-device-height: 960px){ 
+/*For carousel box */
+  .carousel-inner{
+    top: 80px;
+    box-shadow: black 4px 3px 35px;
+    width: 75%;
+ }
+
+/*For carousel box indicators */
+ .carousel .carousel-indicators li {
+  top: 90px; 
+  
+ }
+/*For carousel box next and prev control*/
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon{
+   background-image: none;
+   bottom: 50%;
+   width: 25%;
+   height: 20%;
+   
+ }
+
+ body{
+   background-size: 100%  300%;
+                /*width - height   */
+   
+ }
+ #modal-login{
+  top: 50px;
+ }
+
+ #login-ff-txt{
+left: 60%;
+ }
+
+ } /*End of media Query 760px */
+
+ @media screen and  (max-device-width: 960px) and (orientation: landscape) {
+    .carousel-inner{
+      box-shadow: blue 4px 3px 35px;
+      width: 60%;
+      top: 65px;
+    }
+    .carousel .carousel-indicators li {
+      top: 85px; 
+      
+     }
+
+    body{
+      background-size: 100% 300%;
+    }
+    #modal-login{
+      top: 2px;
+     }
+ }
+
+
+.carousel-control-prev-icon{
+  position: relative;
+    
+    top: 120px;
+    left:55%;
+}
+.carousel-control-next-icon{
+  position: relative;
+  top: 120px;
+  right: 55%;
+}
+  

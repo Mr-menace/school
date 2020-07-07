@@ -1,0 +1,86 @@
+
+/*FOR INDEX.PHP STRUCTURES MANIPULATION DESIGNS*/
+#home{   
+    position: fixed;
+    color: seashell;
+    left: 35%;
+    top: 15%;
+}
+body{
+    background-image:url("../img/office-bg.jpg");
+    max-height: 100%;
+    max-width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#body-box{
+    border-style:solid ;
+    border-color: black;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
+    background-color: salmon;
+    
+}
+#txtHint{
+    max-width: 50%;
+    
+}
+#txtOutput{
+    position: relative;
+    top: 10px;
+    text-align: left;
+    color:black;
+    font-weight: 800;
+    
+} 
+#Mbg{
+    text-shadow:2px 2px 4px #000000 ;
+    max-width: 100px;
+    position: relative;
+    font-size: 25px;
+    left: auto;
+    color: bisque;
+    font-weight: bolder;
+}
+
+/*Start of media query 76px height*/
+@media screen and (max-device-height: 900px){
+
+    #body-box{
+        box-shadow: white 4px 3px 35px;      
+        left: 10%;      
+        width: 65%;
+    
+    }
+
+    #Mbg{
+       
+      left: auto;
+      margin-top: 5px;
+      
+    }
+
+
+    body{
+        background-size: 100% 300%;
+    }
+
+    #home{
+        position: fixed;
+        top: 25%;
+        left: 15%;
+    }
+
+    @media screen and (max-device-width: 760px) and (orientation: landscape) {
+        #home{
+            top: 45%;
+        }
+    }
+
+
+
+} /*End of media query 760px height*/
+
+
+

@@ -1,0 +1,37 @@
+#result-body{ 
+ 
+    position: fixed;
+    background-color: slategrey;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5%;
+    object-position: center;
+    left: auto;
+    box-shadow: 10px 10px 5px skyblue;
+    width: 460px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+.color{
+
+    position: relative;
+    text-shadow:2px -2px 5px red;
+/* shadow order: horizontal shad.px - vertical shad.px - shad. blur px - shad.color */
+    color:yellow;
+}
+
+@media screen and (max-device-height:900px) {
+    #result-body{
+     left: auto;
+     background-color: rgb(134, 15, 15);
+     height: auto;
+     width: auto;
+    }
+
+    
+
+   }
+
+

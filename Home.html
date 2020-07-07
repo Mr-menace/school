@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to USC Portal</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media="screen" href='css/home.css'>
+
+
+
+</head>
+<body>   
+ 
+    <!--START OF NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="img/hotel.svg" width="30" height="30" alt="Home" class="rounded-circle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-warning" href="#"><span class="sr-only">(warning)</span><i class='fas fa-book-open'> Admission</i></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link text-warning" href="#"><span class="sr-only">(warning)</span><i class='fas fa-paper-plane'> Vision and Mission</i></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class='fas fa-project-diagram'> Links</i>
+              </a>             
+              <div class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-warning" href="index.php" class="">Index</a>
+                <a class="dropdown-item text-warning" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-warning" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item active ">
+              <a class="nav-link text-warning" href="#" data-toggle="modal" data-target="#modal-login"><span class="sr-only">(warning)</span><i class='fas fa-id-card'> Login</i></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!--END OF NAVIGATION BAR-->
+
+
+      <!--START OF MODAL-->
+
+      <div class="modal" tabindex="-1" role="dialog" id="modal-login"> 
+        <div class="modal-dialog " role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-danger">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body bg-light">
+              <p class="text-muted">Email:
+                <input type="email" class="form-control" id="usremail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-success">Your email is private we will not share it with anyone.</small>
+              </p>
+
+              <p class="text-muted">Password:
+                <input type="password" class="form-control" id="usrpswd"  placeholder="Password">  </p>
+
+                <div class="form-check form-check-inline" id="chkbox">
+                <input class="form-check-input" type="checkbox" value="" id="showpswd">
+                <label class="form-check-label text-success" for="showpswd" id="chktxt">
+                                                            <!--itong for ay para pag pinindot ang word na show password ay mag chcheck ang checkbox-->
+                 Show Password
+                </label>
+              </div>
+              
+             
+                
+                <div class="form-check form-check-inline" id="media-brand">
+                <p id="login-ff-txt">Login with the following:</p>
+                <i class="fa fa-facebook-square" id="fb"> </i>
+                <i class="fa fa-google" id="google"></i>
+                </div>
+
+            </div>
+
+            <div class="modal-footer bg-danger">
+              Don't have an account?<button type="button" class="btn btn-info" id="btnsign-up">Sign Up</button>
+              <button type="button" class="btn btn-warning"id="btnlogin">Login</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!--END OF MODAL-->
+
+    <!-- Carousels -->
+ 
+  <div class="bd-example">
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner   mx-auto d-block" >
+        <div class="carousel-item active" data-interval="1000">
+          <img src="img/class1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Implementing</h5>
+            <p>Professionalism at all times</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-interval="2000">
+          <img src="img/class2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Let's Make it Happen</h5>
+            <p>Interactivity practice.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-interval="2000">
+          <img src="img/class3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>A Place to Learn</h5>
+            <p>Comfortability.</p>
+          </div>
+        </div>
+      
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+    <!--End of Carousels-->
+</body>
+</html>
